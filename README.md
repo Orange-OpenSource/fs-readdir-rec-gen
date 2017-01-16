@@ -1,8 +1,14 @@
 # A recursive read dir, generator based implementation
 
-A NodeJS module to get a generator for files in a directory and subdirectories, with a file filter capability.
 
-Licence MIT
+[![Build Status](https://travis-ci.org/nicolas-moteau/fs-readdir-rec-gen.svg?branch=master)](https://travis-ci.org/nicolas-moteau/fs-readdir-rec-gen)
+[![Coverage Status](https://coveralls.io/repos/github/nicolas-moteau/fs-readdir-rec-gen/badge.svg?branch=master)](https://coveralls.io/github/nicolas-moteau/fs-readdir-rec-gen?branch=master)
+
+
+[![npm](https://img.shields.io/npm/v/fs-readdir-rec-gen.svg)](https://www.npmjs.com/package/fs-readdir-rec-gen)
+[![License](https://img.shields.io/npm/l/fs-readdir-rec-gen.svg)](LICENSE.txt)
+
+A NodeJS module to get a generator for files in a directory and subdirectories, with a file filter capability.
 
 # Install
 

@@ -1,6 +1,6 @@
 {
   "name": "fs-readdir-rec-gen",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Get an ES6 generator for files in a directory and subdirectories",
   "main": "fs-readdir-rec-gen.js",
   "scripts": {

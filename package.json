@@ -1,6 +1,6 @@
 {
   "name": "fs-readdir-rec-gen",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Get an ES6 generator for files in a directory and subdirectories",
   "main": "fs-readdir-rec-gen.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nicolas-moteau/fs-readdir-rec-gen.git"
-},
+  },
   "author": "Nicolas Moteau <nicolas.moteau@orange.com>",
   "license": "MIT",
   "devDependencies": {

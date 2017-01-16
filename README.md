@@ -4,6 +4,10 @@ A NodeJS module to get a generator for files in a directory and subdirectories, 
 
 Licence MIT
 
+# Install
+
+    npm install fs-readdir-rec-gen
+
 # API
 
     fsReadDirRecGen(dir [, options] [, filter] [, recursive=true])
@@ -13,7 +17,7 @@ Licence MIT
 * ```filter``` {Function} - optional, a function to filter on file names. Defaults to no filter.
 * ```recursive``` {Boolean} - optional, whether to search in sub directories. Defaults to true.
 
-If ```dir``` does not exists, an exception if immediately thrown by NodeJS' ``̀`fs``̀` API.
+If ```dir``` does not exists, an exception is immediately thrown by NodeJS' ``̀`fs``̀` API.
 
 # Examples
 With a simple .js file filter:

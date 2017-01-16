@@ -9,14 +9,18 @@
   },
   "keywords": [
     "readdir",
+    "recursive",
     "list",
     "files",
     "directory",
     "subdirectories",
-    "recursive",
     "synchronous",
     "generator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolas-moteau/fs-readdir-rec-gen.git"
+},
   "author": "Nicolas Moteau <nicolas.moteau@orange.com>",
   "license": "MIT",
   "devDependencies": {

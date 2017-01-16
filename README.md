@@ -16,7 +16,7 @@ Licence MIT
 If ```dir``` does not exists, an exception if immediately thrown by NodeJS' ``̀`fs``̀` API.
 
 # Examples
-With a simple .js files:
+With a simple .js file filter:
 ```js
 var fsReadDirRecGen = require('fs-readdir-rec-gen')
 

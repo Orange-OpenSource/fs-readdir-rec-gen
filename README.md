@@ -1,10 +1,8 @@
 # A recursive read dir, generator based implementation
 
-
-[![Build Status](https://travis-ci.org/nicolas-moteau/fs-readdir-rec-gen.svg?branch=master)](https://travis-ci.org/nicolas-moteau/fs-readdir-rec-gen)
-[![Coverage Status](https://coveralls.io/repos/github/nicolas-moteau/fs-readdir-rec-gen/badge.svg?branch=master)](https://coveralls.io/github/nicolas-moteau/fs-readdir-rec-gen?branch=master)
-
-
+[![Build Status](https://travis-ci.org/Orange-OpenSource/fs-readdir-rec-gen.svg?branch=master)](https://travis-ci.org/Orange-OpenSource/fs-readdir-rec-gen)
+[![Coverage Status](https://coveralls.io/repos/github/Orange-OpenSource/fs-readdir-rec-gen/badge.svg?branch=master)](https://coveralls.io/github/Orange-OpenSource/fs-readdir-rec-gen?branch=master)
+[![Installs!](https://img.shields.io/npm/dm/fs-readdir-rec-gen.svg)](https://www.npmjs.com/package/fs-readdir-rec-gen)
 [![npm](https://img.shields.io/npm/v/fs-readdir-rec-gen.svg)](https://www.npmjs.com/package/fs-readdir-rec-gen)
 [![License](https://img.shields.io/npm/l/fs-readdir-rec-gen.svg)](LICENSE.txt)
 
@@ -12,18 +10,22 @@ A NodeJS module to get a generator for files in a directory and subdirectories, 
 
 # Install
 
-    npm install fs-readdir-rec-gen
+```bash
+npm install --save-dev fs-readdir-rec-gen
+```
 
 # API
 
-    fsReadDirRecGen(dir [, options] [, filter] [, recursive=true])
+```js
+fsReadDirRecGen(dir [, options] [, filter] [, recursive=true])
+```
 
 * ```dir``` {String} - the directory where to look for files.
 * ```options``` {String|Object} - optional, options passed NodeJs File System API (see [NodeJS' fs API](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)).
 * ```filter``` {Function} - optional, a function to filter on file names. Defaults to no filter.
 * ```recursive``` {Boolean} - optional, whether to search in sub directories. Defaults to true.
 
-If ```dir``` does not exists, an exception is immediately thrown by NodeJS' ``̀`fs``̀` API.
+If ```dir``` does not exists, an exception is immediately thrown by NodeJS' ```fs``` API.
 
 # Examples
 With a simple .js file filter:

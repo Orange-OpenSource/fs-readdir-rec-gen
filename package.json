@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicolas-moteau/fs-readdir-rec-gen.git"
+    "url": "https://github.com/Orange-OpenSource/fs-readdir-rec-gen.git"
   },
   "author": "Nicolas Moteau <nicolas.moteau@orange.com>",
   "license": "MIT",

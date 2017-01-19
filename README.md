@@ -11,7 +11,7 @@ A NodeJS module to get a generator for files in a directory and subdirectories, 
 # Install
 
 ```bash
-npm install --save-dev fs-readdir-rec-gen
+npm install --save fs-readdir-rec-gen
 ```
 
 # API

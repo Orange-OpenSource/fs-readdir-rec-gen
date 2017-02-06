@@ -23,6 +23,14 @@
   },
   "author": "Nicolas Moteau <nicolas.moteau@orange.com>",
   "license": "MIT",
+  "bugs": "https://github.com/Orange-OpenSource/fs-readdir-rec-gen/issues",
+  "homepage": "https://github.com/Orange-OpenSource/fs-readdir-rec-gen",
+  "files": [
+    "fs-readdir-rec-gen.js"
+  ],
+  "engines": {
+    "node": ">= 4.3.2"
+  },
   "devDependencies": {
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0"

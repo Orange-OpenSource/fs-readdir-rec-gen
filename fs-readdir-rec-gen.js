@@ -55,7 +55,7 @@ function* _readdirRecGen(dir, options, filter, recursive) {
         var relativePathFileName = path.join(dir, file);
         if (fs.statSync(relativePathFileName).isDirectory()) {
             if (recursive) {
-                yield * _readdirRecGen(relativePathFileName, options, filter, recursive);
+                yield* _readdirRecGen(relativePathFileName, options, filter, recursive);
             }
         } else {
             if (filter) {
@@ -67,6 +67,6 @@ function* _readdirRecGen(dir, options, filter, recursive) {
             }
         }
     }
-};
+}
 
 module.exports = readdirRecGen;

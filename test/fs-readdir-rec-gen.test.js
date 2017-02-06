@@ -24,11 +24,11 @@ describe('fs-readdir-rec-gen', function() {
         ].map(file => path.join(dir, file));
 
         var allFiles = [];
-        for (file of readdirRecGen(dir)) {
+        for (let file of readdirRecGen(dir)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -41,11 +41,11 @@ describe('fs-readdir-rec-gen', function() {
         ].map(file => path.join(dir, file));
 
         var allFiles = [];
-        for (file of readdirRecGen(dir, true)) {
+        for (let file of readdirRecGen(dir, true)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -56,11 +56,11 @@ describe('fs-readdir-rec-gen', function() {
         ].map(file => path.join(dir, file));
 
         var allFiles = [];
-        for (file of readdirRecGen(dir, false)) {
+        for (let file of readdirRecGen(dir, false)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -72,13 +72,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, dotJsFilesFilter)) {
+        for (let file of readdirRecGen(dir, dotJsFilesFilter)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -90,13 +90,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, dotJsFilesFilter, true)) {
+        for (let file of readdirRecGen(dir, dotJsFilesFilter, true)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -108,13 +108,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, dotJsFilesFilter, false)) {
+        for (let file of readdirRecGen(dir, dotJsFilesFilter, false)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -128,11 +128,11 @@ describe('fs-readdir-rec-gen', function() {
 
         var options = 'utf-8';
         var allFiles = [];
-        for (file of readdirRecGen(dir, options)) {
+        for (let file of readdirRecGen(dir, options)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -146,13 +146,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, options, dotJsFilesFilter)) {
+        for (let file of readdirRecGen(dir, options, dotJsFilesFilter)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -166,13 +166,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, options, dotJsFilesFilter, true)) {
+        for (let file of readdirRecGen(dir, options, dotJsFilesFilter, true)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -186,13 +186,13 @@ describe('fs-readdir-rec-gen', function() {
 
         function dotJsFilesFilter(fileName) {
             return fileName.endsWith('.js');
-        };
+        }
         var allFiles = [];
-        for (file of readdirRecGen(dir, options, dotJsFilesFilter, false)) {
+        for (let file of readdirRecGen(dir, options, dotJsFilesFilter, false)) {
             allFiles.push(file);
-        };
+        }
 
-        assert.deepEqual(allFiles.sort(), expectedFiles.sort())
+        assert.deepEqual(allFiles.sort(), expectedFiles.sort());
         done();
     });
 
@@ -203,7 +203,7 @@ describe('fs-readdir-rec-gen', function() {
                 readdirRecGen(dir);
             },
             function(err) {
-                if ( (err instanceof Error) && /Error: ENOENT: no such file or directory/.test(err) ) {
+                if (err instanceof Error && /Error: ENOENT: no such file or directory/.test(err) ) {
                     return true;
                 }
             },
